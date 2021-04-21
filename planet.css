@@ -52,6 +52,8 @@ body {
     border-radius: 50%;
     animation: animate 4s linear infinite;
 }
+
+/*
 @keyframes animate {
     0%
     {
@@ -70,8 +72,9 @@ body {
     left: 0;
     width: 50%;
     height: 100%;
+    background: linear-gradient(to top, transparent, rgba(0, 255, 249, 0.4));
     background-size: 200px 360px;
-    background: linear-gradient(to top, transparent, rgba(0, 255, 249, 0.4)) no-repeat;
+    background-repeat: no-repeat;
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
 
@@ -82,10 +85,9 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
     width: 10px;
     height: 10px;
-    background: #00fff9;
     border-radius: 50%;
     z-index: 10;
     box-shadow: 0 0 10px #00fff9,
@@ -98,7 +100,6 @@ body {
                 0 0 80px #00fff9,
                 0 0 90px #00fff9,
                 0 0 100px #00fff9;
-
 }
 
 .planetEarth .loader span {
@@ -109,7 +110,7 @@ body {
     bottom: 10px;
     background: #182357;
     border-radius: 50%;
-}
+}*/
 .earth {
     position: absolute;
     width: 340px;
@@ -118,9 +119,10 @@ body {
     border-radius: 50%;
     background-size: cover;
     box-shadow: inset 0 0 20px #03a9f4,
-                0 0 120px #03a9f4;
+    0 0 120px #03a9f4;
     animation: animateEarth 20s linear infinite;
 }
+
 @keyframes animateEarth {
     0% {
         background-position: 0;
@@ -132,8 +134,7 @@ body {
 }
 
 
-
- /*mars*/
+/*mars*/
 
 .planetMars {
     position: relative;
@@ -151,13 +152,12 @@ body {
     border-radius: 50%;
     animation: animate 4s linear infinite;
 }
-@keyframes animate {
-    0%
-    {
+
+/*@keyframes animate {
+    0% {
         transform: rotate(0deg);
     }
-    100%
-    {
+    100% {
         transform: rotate(360deg);
     }
 }
@@ -170,7 +170,7 @@ body {
     width: 50%;
     height: 100%;
     background-size: 200px 360px;
-    background: linear-gradient(to top, transparent, rgba(0, 255, 87, 54.4)) no-repeat;
+    background: linear-gradient(to top, transparent, rgba(255, 87, 34, 0.4)) no-repeat;
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
 
@@ -209,6 +209,9 @@ body {
     background: #190703;
     border-radius: 50%;
 }
+*/
+
+
 .mars {
     position: absolute;
     width: 340px;
@@ -220,12 +223,13 @@ body {
     0 0 120px #ff5722;
     animation: mars 20s linear infinite;
 }
+
 @keyframes mars {
     0% {
         background-position: 0;
     }
     100% {
-        background-position: -340px;
+        background-position: 340px;
     }
 
 }
