@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 
 }
+a{
+    color: #fff;
+    text-decoration: none;
+}
 
 body {
     display: flex;
@@ -210,8 +214,6 @@ body {
     border-radius: 50%;
 }
 */
-
-
 .mars {
     position: absolute;
     width: 340px;
