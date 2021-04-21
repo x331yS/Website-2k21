@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 .navigation {
     display: flex;
     justify-content: center;
@@ -18,12 +19,12 @@
     position: relative;
 }
 
-.navigation ul li{
+.navigation ul li {
     text-align: center;
     list-style: none;
 }
 
-.navigation ul li a{
+.navigation ul li a {
     color: #333;
     text-decoration: none;
     font-size: 3rem;
@@ -33,10 +34,12 @@
     transition: 0.5s;
 
 }
+
 .navigation ul:hover li a {
     color: #0002;
 
 }
+
 .navigation ul li:hover a {
     color: #000;
 
@@ -48,12 +51,12 @@
     position: absolute;
     top: 50%;
     left: 40%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 5em;
-    color: rgba(0,0,0,.1);
+    color: rgba(0, 0, 0, .1);
     border-radius: 50%;
     z-index: -1;
     opacity: 0;
