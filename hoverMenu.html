@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="hoverMenu.css">
+    <title>Hover Menu</title>
 </head>
 <body>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="color.html">Color Menu</a></li>
+    <li><a href="card.html">Card</a></li>
+    <li><a href="planet.html">Planet</a></li>
+    <li><a href="loaderPage.html">Loader</a></li>
+    <li><a href="#">Contact</a></li>
+    <div class="cursor"></div>
+
+</ul>
+<script>
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.pageX + 'px';
+        cursor.style.top = e.pageY + 'px';
+    })
+</script>
 
 </body>
 </html>
