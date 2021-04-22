@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+<body>
+<section class="banner" id="sec">
+    <header>
+        <a href="/" class="logo">x33lyS</a>
+        <div id="toggle" onclick="toggle()"></div>
+    </header>
+    <div class="content">
+        <h2>Hello World,<br>I'm <span>Lejosne Florian</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores aspernatur autem explicabo
+            fugit minus modi nam natus porro quam, rerum, veritatis. Accusantium consectetur distinctio dolorem hic
+            maxime molestias nesciunt provident quasi quis sit! Atque, aut, deleniti ipsa minus molestias nostrum
+            officia omnis quam quo reprehenderit rerum tempora voluptates voluptatum!</p>
+        <a href="project.html">My projects</a>
+    </div>
+    <ul class="sci">
+        <li><a href="https://github.com/x33lyS" target="_blank"><img src="github.png"></a></li>
+        <li><a href="https://www.linkedin.com/in/florian-lejosne/" target="_blank"><img src="linkedin.png"></a></li>
+        <li><a href="https://discord.gg/8fKKQndCaJ" target="_blank"><img src="discord.png"></a>
+        </li>
+        <li><a href="https://www.instagram.com/florian.ljsne/" target="_blank"><img src="instagram.png"></a></li>
+
+    </ul>
+    </div>
+</section>
+<div class="navigation" id="navigation">
+    <ul>
+        <li><a href="/" data-text="Home">Home</a></li>
+        <li><a href="project.html" data-text="Project">Project</a></li>
+        <li><a href="/" data-text="About">About</a></li>
+        <li><a href="/" data-text="Service">Service</a></li>
+        <li><a href="/" data-text="Contact">Contact</a></li>
+
+
+    </ul>
+</div>
+<script type="text/javascript">
+    function toggle() {
+        var sec = document.getElementById('sec');
+        var nav = document.getElementById('navigation');
+        sec.classList.toggle('active');
+        nav.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
