@@ -218,6 +218,10 @@ header #toggle::after {
     font-size: 1.2em;
     font-weight: 500;
 }
+.content a:hover {
+    background: #f86140;
+    color: #fff;
+}
 
 .sci {
     position: absolute;
