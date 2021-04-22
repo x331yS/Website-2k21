@@ -86,6 +86,7 @@ header #toggle::after {
     transform: translateX(-50%);
 
 }
+
 .navigation {
     display: flex;
     justify-content: center;
@@ -249,11 +250,28 @@ header #toggle::after {
     max-width: 20px;
     filter: invert();
 }
+
 .sci li a:hover img {
     filter: initial;
 }
 
-@media (max-width: 1025px) {
+@media(min-width: 1550px) and (max-width: 1900px) {
+    .sci {
+        position: absolute;
+        bottom: 50px;
+        right: initial;
+        flex-direction: row;
+    }
+
+    .sci li a {
+        margin: initial;
+        margin-right: 10px;
+
+    }
+
+}
+
+@media (max-width: 900px) {
     header {
         padding: 20px 50px;
     }
@@ -300,3 +318,4 @@ header #toggle::after {
     }
 
 }
+
