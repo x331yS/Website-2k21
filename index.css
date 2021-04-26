@@ -29,14 +29,14 @@ header .logo {
     transition: 0.6s;
 }
 
-header #toggle {
+#toggle {
     position: relative;
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
 
-header #toggle::before {
+#toggle::before {
     content: '';
     position: absolute;
     top: 7px;
@@ -45,7 +45,7 @@ header #toggle::before {
     background: #fff;
 }
 
-header #toggle::after {
+#toggle::after {
     content: '';
     position: absolute;
     bottom: 7px;
@@ -55,13 +55,13 @@ header #toggle::after {
 
 }
 
-.banner.active header #toggle::before {
+.banner.active #toggle::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.banner.active header #toggle::after {
+.banner.active #toggle::after {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
@@ -320,6 +320,32 @@ header #toggle::after {
         margin-right: 10px;
 
     }
+    #navigation {
+        width: 100%;
+    }
+    .banner.active {
+        transform: translateX(-100%);
 
+    }
+
+    .banner.active #toggle {
+        right: -110%;
+        background: #fff;
+        height: 50px;
+
+    }
+    header {
+        position: fixed;
+    }
+    .banner.active #toggle::after {
+        background: #000;
+        top: 9px;
+        height: 0.5rem;
+    }
+
+    .banner.active #toggle::before {
+        background: #000;
+        height: 0.5rem;
+    }
 }
 
