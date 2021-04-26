@@ -6,14 +6,14 @@ function secret(str) {
         console.error('Nice dude')
         console.log("Click here " + ok.link(URL));
     } else {
-        window.close()
+        close()
     }
 }
 
 let win;
 
 function open() {
-    win = window.open("https://x33lys.github.io/secret.html", "", "width=900, height=786");
+    win = window.open("https://x33lys.github.io/secret.html", "_blank", "width=900, height=786");
 }
 
 function close() {
